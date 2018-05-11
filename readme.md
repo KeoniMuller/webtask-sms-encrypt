@@ -4,7 +4,7 @@ Sample project to use webtask with sms and ceasar cipher.
 
 ## Description
 
-This project is where I implemented in in webtask a express app  where I can encrypt and decrypt messages using caesar cipher and twilio to send an encrypted SMS to any number.
+This project is where I implemented in webtask a express app  where I can encrypt and decrypt messages using caesar cipher and twilio to send an encrypted SMS to any number.
 
 ## Getting Started
 
@@ -31,12 +31,19 @@ $ wt init
 
 Create an env file that has this variables
 
-* SHIFT_AMOUNT=<int number shift amount to encrypt>
-* TWILIO_ACCOUNT_SID=<twilio account SID>
-* TWILIO_AUTH_TOKEN=<twilio auth token>
-* TWILIO_MY_NUMBER=<twilio phone number>
+* SHIFT_AMOUNT=int number shift amount to encrypt
+* TWILIO_ACCOUNT_SID=twilio account SID
+* TWILIO_AUTH_TOKEN=twilio auth token
+* TWILIO_MY_NUMBER=twilio phone number
 
-### Executing program
+### Executing program locally
+
+From the console just execute this command:
+```
+wt serve index.js --secrets-file .env
+```
+
+### Deployment
 
 From the console just execute this command:
 ```
