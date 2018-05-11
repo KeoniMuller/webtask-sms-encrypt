@@ -13,34 +13,34 @@ This project is where I implemented in in webtask a express app  where I can enc
 * Node
 * Npm
 * Webtask CLI
+* Configured Twilio account
 
 ### Installing
 
+Clone the project
+
 ```
-* $ npm i -g wt-cli
-* $ wt init
+$ git clone https://github.com/KeoniMuller/webtask-sms-encrypt.git
+````
+
+Install webtask cli
+```
+$ npm i -g wt-cli
+$ wt init
 ```
 
+Create an env file that has this variables
+
+* SHIFT_AMOUNT=<int number shift amount to encrypt>
+* TWILIO_ACCOUNT_SID=<twilio account SID>
+* TWILIO_AUTH_TOKEN=<twilio auth token>
+* TWILIO_MY_NUMBER=<twilio phone number>
 
 ### Executing program
 
+From the console just execute this command:
 ```
 wt create index.js --secrets-file .env -w -b
-```
-
-### Executing program
-
-* How to run the program
-* Step-by-step bullets
-```
-code blocks for commands
-```
-
-## Help
-
-Any advise for common problems or issues.
-```
-command to run if program contains helper info
 ```
 
 ## Authors
